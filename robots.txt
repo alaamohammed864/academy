@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alaamohammed864.github.io/academy/sitemap.xml
