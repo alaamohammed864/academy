@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ══ SEO PRIMARY ══ -->
+<title>أكاديمية الحلول الهندسية | المهندس علاء محمد</title>
+<meta name="description" content="أكاديمية الحلول الهندسية والتقنية - استشارات هندسية ودورات تدريبية متخصصة بإشراف المهندس علاء محمد">
+<meta name="keywords" content="هندسة ميكانيكية، استشارات هندسية العراق، دورات برمجية، علاء محمد، تصميم صناعي، البصرة، FEA، SolidWorks، AXIOM، أكاديمية هندسية">
+<meta name="author" content="ENG_ALAA MOHAMMED">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Arabic">
+<meta name="geo.region" content="IQ-BA">
+<meta name="geo.placename" content="Basra, Iraq">
+
+<!-- ══ OPEN GRAPH (Facebook / WhatsApp / LinkedIn preview) ══ -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="أكاديمية الحلول الهندسية | المهندس علاء محمد">
+<meta property="og:description" content="استشارات هندسية ودورات تدريبية متخصصة — هندسة ميكانيكية، FEA، SolidWorks. البصرة، العراق.">
+<meta property="og:locale" content="ar_IQ">
+<meta property="og:site_name" content="أكاديمية الحلول الهندسية والتقنية">
+
+<!-- ══ TWITTER CARD ══ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="أكاديمية الحلول الهندسية | المهندس علاء محمد">
+<meta name="twitter:description" content="استشارات هندسية ودورات تدريبية متخصصة — هندسة ميكانيكية، FEA، SolidWorks. البصرة، العراق.">
+<meta name="twitter:site" content="@ArtherAlfred">
+<meta name="twitter:creator" content="@ArtherAlfred">
+
+<!-- ══ CANONICAL & STRUCTURED DATA ══ -->
+<link rel="canonical" href="https://alaa-engineering.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "أكاديمية الحلول الهندسية والتقنية",
+  "description": "استشارات هندسية ودورات تدريبية متخصصة بإشراف المهندس علاء محمد",
+  "founder": { "@type": "Person", "name": "Alaa Mohammed Saleh", "jobTitle": "Mechanical Engineer" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Basra", "addressCountry": "IQ" },
+  "sameAs": [
+    "https://www.linkedin.com/in/alaa-mohammed-saleh-72a52833a",
+    "https://www.youtube.com/@alaa-bc8dc",
+    "https://www.instagram.com/alaamohammmadsalih/",
+    "https://www.facebook.com/alaa199516",
+    "https://t.me/a19952alaa"
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cairo:wght@300;400;600;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e8cc7a;
+  --gold-dim: rgba(201,168,76,0.12);
+  --gold-line: rgba(201,168,76,0.35);
+  --ink: #0d0d0d;
+  --ink2: #141414;
+  --ink3: #1c1c1c;
+  --paper: #f5f0e8;
+  --paper2: #ede7d8;
+  --off: #2a2a2a;
+  --muted: #888;
+  --muted2: #555;
+  --white: #fafaf8;
+  --red: #c0392b;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--ink);
+  color: var(--white);
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+/* ══ NOISE TEXTURE OVERLAY ══ */
+body::before {
+  content:'';
+  position:fixed; inset:0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events:none; z-index:0; opacity:.6;
+}
+
+/* ══ STICKY NAV ══ */
+nav {
+  position:sticky; top:0; z-index:999;
+  background:rgba(13,13,13,0.97);
+  border-bottom:1px solid rgba(201,168,76,0.2);
+  backdrop-filter:blur(20px);
+  display:flex; align-items:center;
+  padding:0 20px 0 20px;
+  height:52px;
+  gap:0;
+}
+.nav-brand {
+  font-family:'DM Mono',monospace;
+  font-size:11px; letter-spacing:3px;
+  color:var(--gold); margin-left:auto;
+  white-space:nowrap; flex-shrink:0;
+  padding-left:16px;
+}
+.nav-social {
+  display:flex; align-items:center; gap:1px;
+  padding-right:12px;
+  border-right:1px solid rgba(255,255,255,0.08);
+  margin-right:4px;
+  flex-shrink:0;
+}
+.nav-soc {
+  width:28px; height:28px;
+  display:flex; align-items:center; justify-content:center;
+  color:rgba(136,136,136,0.7);
+  text-decoration:none;
+  border-radius:4px;
+  transition:all .2s;
+  flex-shrink:0;
+}
+.nav-soc:hover { color:var(--gold); background:rgba(201,168,76,0.1); }
+.nav-links { display:flex; gap:0; overflow-x:auto; scrollbar-width:none; }
+.nav-links::-webkit-scrollbar { display:none; }
+.nav-a {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:2px;
+  color:var(--muted);
+  padding:0 18px; height:52px;
+  display:flex; align-items:center;
+  text-decoration:none; border:none; background:none;
+  cursor:pointer; white-space:nowrap;
+  border-bottom:2px solid transparent;
+  transition:all .25s;
+}
+.nav-a:hover,.nav-a.on { color:var(--gold); border-bottom-color:var(--gold); }
+
+/* ══ HERO ══ */
+.hero {
+  position:relative; z-index:1;
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 420px;
+  border-bottom:1px solid var(--gold-line);
+  overflow:hidden;
+}
+
+.hero-left {
+  padding:80px 60px 80px 40px;
+  display:flex; flex-direction:column;
+  justify-content:space-between;
+  border-left:1px solid var(--gold-line);
+}
+
+.hero-eyebrow {
+  display:flex; align-items:center; gap:14px;
+  margin-bottom:40px;
+}
+.hero-eyebrow-line { width:40px; height:1px; background:var(--gold); }
+.hero-eyebrow-text {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:4px;
+  color:var(--gold); text-transform:uppercase;
+}
+
+.hero-num {
+  font-family:'Playfair Display',serif;
+  font-size:200px; font-weight:900;
+  line-height:.85;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(201,168,76,0.15);
+  position:absolute;
+  top:60px; right:-20px;
+  pointer-events:none;
+  user-select:none;
+}
+
+.hero-title {
+  font-family:'Cairo',sans-serif;
+  font-size:clamp(42px,5vw,68px);
+  font-weight:900;
+  line-height:1.1;
+  color:var(--white);
+  margin-bottom:10px;
+}
+.hero-title span { color:var(--gold); }
+
+.hero-subtitle {
+  font-size:17px; font-weight:300;
+  color:var(--muted); line-height:1.8;
+  max-width:560px; margin-bottom:40px;
+}
+
+.hero-badges { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:48px; }
+.badge {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:2px;
+  padding:8px 16px;
+  border:1px solid var(--gold-line);
+  color:var(--gold);
+  background:var(--gold-dim);
+}
+.badge.solid {
+  background:var(--gold);
+  color:var(--ink);
+  border-color:var(--gold);
+  font-weight:600;
+}
+
+.hero-stats {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding-top:32px;
+}
+.hstat { padding:0 20px 0 0; }
+.hstat:first-child { padding-right:0; }
+.hstat + .hstat { border-right:1px solid rgba(255,255,255,0.08); padding-right:20px; }
+.hstat-n {
+  font-family:'Playfair Display',serif;
+  font-size:40px; font-weight:700;
+  color:var(--gold);
+  line-height:1;
+  margin-bottom:4px;
+}
+.hstat-l {
+  font-size:11px; color:var(--muted);
+  letter-spacing:1px;
+}
+
+.hero-right {
+  background:var(--ink2);
+  padding:60px 40px;
+  display:flex; flex-direction:column;
+  justify-content:center; gap:0;
+  position:relative; overflow:hidden;
+}
+.hero-right::before {
+  content:'';
+  position:absolute;
+  top:-100px; left:-100px;
+  width:400px; height:400px;
+  background:radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%);
+}
+.pillars-title {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:3px;
+  color:var(--muted2);
+  margin-bottom:28px;
+  text-transform:uppercase;
+}
+.pillar {
+  padding:22px 0;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  display:grid; grid-template-columns:40px 1fr;
+  gap:16px; align-items:start;
+  cursor:default;
+  transition:background .2s;
+}
+.pillar:last-child { border-bottom:none; }
+.pillar:hover { background:rgba(201,168,76,0.04); margin:0 -40px; padding:22px 40px; }
+.pillar-num {
+  font-family:'Playfair Display',serif;
+  font-size:28px; font-weight:700;
+  color:rgba(201,168,76,0.25);
+  line-height:1;
+}
+.pillar-name {
+  font-size:16px; font-weight:700;
+  color:var(--white); margin-bottom:6px;
+}
+.pillar-desc {
+  font-size:12px; color:var(--muted);
+  line-height:1.7;
+}
+
+/* ══ SECTION WRAPPER ══ */
+.section { position:relative; z-index:1; padding:80px 60px; border-bottom:1px solid rgba(255,255,255,0.06); }
+.section:nth-child(even) { background:var(--ink2); }
+
+.section-header {
+  display:grid; grid-template-columns:auto 1fr;
+  gap:28px; align-items:end;
+  margin-bottom:56px;
+}
+.section-index {
+  font-family:'Playfair Display',serif;
+  font-size:72px; font-weight:900;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(201,168,76,0.3);
+  line-height:1;
+}
+.section-title-block {}
+.section-label {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:3px;
+  color:var(--gold); margin-bottom:6px;
+}
+.section-title {
+  font-size:32px; font-weight:800;
+  color:var(--white);
+  border-bottom:2px solid var(--gold);
+  display:inline-block;
+  padding-bottom:4px;
+}
+
+/* ══ DESC BLOCKS ══ */
+.desc-trio { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1px; background:rgba(255,255,255,0.06); margin-bottom:0; }
+.desc-card {
+  background:var(--ink2);
+  padding:36px 32px;
+  position:relative; overflow:hidden;
+  transition:background .3s;
+}
+.section:nth-child(even) .desc-card { background:var(--ink3); }
+.desc-card:hover { background:var(--ink3); }
+.section:nth-child(even) .desc-card:hover { background:#222; }
+.desc-card-num {
+  font-family:'Playfair Display',serif;
+  font-size:56px; font-weight:900;
+  color:rgba(201,168,76,0.08);
+  position:absolute; top:16px; left:20px;
+  line-height:1; pointer-events:none;
+}
+.desc-card-icon {
+  font-size:28px; margin-bottom:16px;
+  display:block;
+}
+.desc-card-title {
+  font-size:17px; font-weight:700;
+  color:var(--gold); margin-bottom:12px;
+}
+.desc-card-text {
+  font-size:13px; color:var(--muted);
+  line-height:1.85;
+}
+.desc-card-text strong { color:var(--white); font-weight:600; }
+.desc-card-text em { color:var(--gold-light); font-style:normal; }
+
+/* ══ COMPETITORS ══ */
+.comp-note {
+  font-family:'DM Mono',monospace;
+  font-size:11px; color:var(--muted2);
+  margin-bottom:24px; letter-spacing:1px;
+}
+.comp-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,0.06); }
+.comp-card {
+  background:var(--ink2);
+  padding:28px 26px;
+  text-decoration:none; display:block;
+  position:relative; overflow:hidden;
+  transition:background .25s;
+  border-top:3px solid transparent;
+}
+.comp-card:hover { background:var(--ink3); border-top-color:var(--gold); }
+.comp-card.type-b:hover { border-top-color:#e07b3a; }
+.comp-card.type-c:hover { border-top-color:#4db88a; }
+.comp-abbr {
+  font-family:'Playfair Display',serif;
+  font-size:32px; font-weight:900;
+  color:rgba(201,168,76,0.18);
+  margin-bottom:14px; display:block;
+}
+.comp-card.type-b .comp-abbr { color:rgba(224,123,58,0.2); }
+.comp-card.type-c .comp-abbr { color:rgba(77,184,138,0.2); }
+.comp-name { font-size:15px; font-weight:700; color:var(--white); margin-bottom:4px; }
+.comp-tag {
+  font-family:'DM Mono',monospace;
+  font-size:9px; letter-spacing:2px;
+  color:var(--gold); margin-bottom:10px; display:block;
+}
+.comp-card.type-b .comp-tag { color:#e07b3a; }
+.comp-card.type-c .comp-tag { color:#4db88a; }
+.comp-txt { font-size:12px; color:var(--muted); line-height:1.65; margin-bottom:14px; }
+.comp-url {
+  font-family:'DM Mono',monospace;
+  font-size:10px; color:var(--muted2);
+  letter-spacing:1px; border-bottom:1px solid rgba(255,255,255,0.1);
+  padding-bottom:2px; display:inline-block;
+  transition:color .2s;
+}
+.comp-card:hover .comp-url { color:var(--gold); border-bottom-color:var(--gold); }
+
+/* ══ STEPS ══ */
+.steps-list { display:flex; flex-direction:column; gap:1px; background:rgba(255,255,255,0.06); }
+.step {
+  background:var(--ink2);
+  display:grid; grid-template-columns:100px 1fr;
+  min-height:120px;
+  cursor:default; transition:background .2s;
+  position:relative; overflow:hidden;
+}
+.section:nth-child(even) .step { background:var(--ink3); }
+.step:hover { background:var(--off); }
+.step-idx {
+  background:rgba(201,168,76,0.05);
+  border-left:1px solid var(--gold-line);
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:4px;
+  padding:20px 10px;
+}
+.step-n {
+  font-family:'Playfair Display',serif;
+  font-size:36px; font-weight:900;
+  color:var(--gold); line-height:1;
+}
+.step-of {
+  font-family:'DM Mono',monospace;
+  font-size:9px; color:var(--muted2); letter-spacing:1px;
+}
+.step-content { padding:28px 36px; }
+.step-title { font-size:18px; font-weight:800; color:var(--white); margin-bottom:8px; }
+.step-desc { font-size:13px; color:var(--muted); line-height:1.8; margin-bottom:14px; }
+.step-links { display:flex; flex-wrap:wrap; gap:8px; }
+.step-lnk {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:1px;
+  padding:5px 14px;
+  border:1px solid rgba(201,168,76,0.25);
+  color:var(--gold);
+  text-decoration:none;
+  transition:all .2s;
+}
+.step-lnk:hover { background:var(--gold); color:var(--ink); }
+.step-lnk.b { border-color:rgba(224,123,58,0.3); color:#e07b3a; }
+.step-lnk.b:hover { background:#e07b3a; color:var(--ink); }
+.step-lnk.c { border-color:rgba(77,184,138,0.3); color:#4db88a; }
+.step-lnk.c:hover { background:#4db88a; color:var(--ink); }
+
+/* ══ PLATFORMS ══ */
+.platform-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,0.06); }
+.pcard {
+  background:var(--ink2);
+  padding:28px 24px;
+  text-decoration:none; display:block;
+  transition:background .25s; position:relative;
+}
+.pcard:hover { background:var(--off); }
+.pcard.star { background:rgba(201,168,76,0.06); border-top:2px solid var(--gold); }
+.pcard.star:hover { background:rgba(201,168,76,0.1); }
+.pcard-rec {
+  font-family:'DM Mono',monospace;
+  font-size:9px; letter-spacing:2px;
+  color:var(--gold); margin-bottom:12px; display:block;
+}
+.pcard-name { font-size:15px; font-weight:800; color:var(--white); margin-bottom:4px; }
+.pcard-type {
+  font-family:'DM Mono',monospace;
+  font-size:9px; color:var(--muted2);
+  letter-spacing:2px; margin-bottom:12px; display:block;
+}
+.pcard-desc { font-size:12px; color:var(--muted); line-height:1.65; margin-bottom:12px; }
+.pcard-price { font-family:'DM Mono',monospace; font-size:12px; color:#4db88a; }
+
+/* ══ TIMELINE ══ */
+.timeline { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,0.06); }
+.phase {
+  background:var(--ink2);
+  padding:36px 32px;
+  position:relative; overflow:hidden;
+}
+.section:nth-child(even) .phase { background:var(--ink3); }
+.phase-ghost {
+  position:absolute; bottom:-20px; right:-10px;
+  font-family:'Playfair Display',serif;
+  font-size:140px; font-weight:900;
+  color:rgba(201,168,76,0.04);
+  line-height:1; pointer-events:none;
+}
+.phase-num {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:3px;
+  color:var(--gold); margin-bottom:8px;
+}
+.phase-name { font-size:22px; font-weight:800; color:var(--white); margin-bottom:4px; }
+.phase-period {
+  font-family:'DM Mono',monospace;
+  font-size:11px; color:var(--muted2);
+  margin-bottom:24px; padding-bottom:20px;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+.phase-task {
+  display:flex; gap:12px; align-items:flex-start;
+  padding:8px 0;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  font-size:13px; color:var(--muted); line-height:1.55;
+}
+.phase-task:last-child { border-bottom:none; }
+.phase-task::before {
+  content:'';
+  width:6px; height:6px; border-radius:50%;
+  background:var(--gold); flex-shrink:0;
+  margin-top:5px;
+}
+
+/* ══ CONTENT CALENDAR ══ */
+.cal-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:rgba(255,255,255,0.06); }
+.cal-card {
+  background:var(--ink2);
+  padding:36px 32px;
+  position:relative; overflow:hidden;
+}
+.section:nth-child(even) .cal-card { background:var(--ink3); }
+.cal-day-label {
+  font-family:'Playfair Display',serif;
+  font-size:11px; font-weight:700;
+  letter-spacing:4px; color:var(--gold);
+  text-transform:uppercase; margin-bottom:10px;
+}
+.cal-title { font-size:22px; font-weight:800; color:var(--white); margin-bottom:8px; }
+.cal-sub { font-size:13px; color:var(--muted); line-height:1.7; margin-bottom:20px; }
+.cal-examples { list-style:none; }
+.cal-ex {
+  font-size:12px; color:var(--muted2);
+  padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.05);
+  display:flex; gap:10px; line-height:1.5;
+}
+.cal-ex::before { content:'—'; color:var(--gold); flex-shrink:0; }
+.cal-ex:last-child { border-bottom:none; }
+.cal-ghost {
+  position:absolute; bottom:-30px; left:-10px;
+  font-family:'Playfair Display',serif;
+  font-size:120px; font-weight:900;
+  color:rgba(201,168,76,0.04);
+  line-height:1; pointer-events:none;
+}
+
+/* ══ BUDGET ══ */
+.budget-wrap { overflow-x:auto; }
+table.btable {
+  width:100%; border-collapse:collapse;
+  direction:rtl;
+}
+table.btable thead th {
+  font-family:'DM Mono',monospace;
+  font-size:10px; letter-spacing:2px;
+  color:var(--muted2); text-align:right;
+  padding:14px 20px;
+  border-bottom:1px solid var(--gold-line);
+  font-weight:400;
+}
+table.btable td {
+  padding:16px 20px; font-size:13px;
+  color:var(--muted);
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  vertical-align:middle;
+}
+table.btable tr:hover td { background:rgba(201,168,76,0.04); }
+table.btable .td-name { color:var(--white); font-weight:500; }
+table.btable .td-price {
+  font-family:'DM Mono',monospace;
+  font-size:13px; color:#4db88a;
+  white-space:nowrap;
+}
+table.btable .td-link a {
+  font-family:'DM Mono',monospace;
+  font-size:10px; color:var(--muted2);
+  text-decoration:none; letter-spacing:1px;
+  transition:color .2s;
+}
+table.btable tr:hover .td-link a { color:var(--gold); }
+.bbar { height:3px; background:rgba(255,255,255,0.07); width:120px; }
+.bbar-fill { height:100%; background:var(--gold); }
+table.btable tr.total td {
+  border-top:1px solid var(--gold-line);
+  border-bottom:none;
+  padding-top:20px;
+}
+table.btable tr.total .td-name { color:var(--gold); font-size:15px; font-weight:800; }
+table.btable tr.total .td-price { color:var(--gold-light); font-size:16px; }
+
+/* ══ INFO PANEL (slide-in drawer) ══ */
+.panel-overlay {
+  position:fixed; inset:0; background:rgba(0,0,0,0.7);
+  z-index:2000; opacity:0; pointer-events:none;
+  transition:opacity .35s;
+  backdrop-filter:blur(6px);
+}
+.panel-overlay.open { opacity:1; pointer-events:all; }
+.panel-drawer {
+  position:fixed; top:0; left:0; bottom:0;
+  width:min(520px,95vw);
+  background:var(--ink2);
+  border-left:1px solid var(--gold-line);
+  z-index:2001;
+  transform:translateX(-100%);
+  transition:transform .4s cubic-bezier(.2,.8,.3,1);
+  overflow-y:auto;
+  padding:48px 40px;
+}
+.panel-overlay.open .panel-drawer { transform:translateX(0); }
+.panel-close {
+  position:absolute; top:20px; left:20px;
+  background:none; border:1px solid rgba(255,255,255,0.15);
+  color:var(--muted); cursor:pointer;
+  font-family:'DM Mono',monospace; font-size:11px;
+  letter-spacing:2px; padding:6px 14px;
+  transition:all .2s;
+}
+.panel-close:hover { border-color:var(--gold); color:var(--gold); }
+.panel-eyebrow {
+  font-family:'DM Mono',monospace; font-size:10px;
+  letter-spacing:3px; color:var(--gold);
+  margin-bottom:12px; margin-top:20px;
+}
+.panel-title {
+  font-family:'Playfair Display',serif;
+  font-size:32px; font-weight:900;
+  color:var(--white); margin-bottom:24px;
+  line-height:1.2;
+}
+.panel-divider { height:1px; background:var(--gold-line); margin:24px 0; }
+.panel-section-title {
+  font-family:'DM Mono',monospace; font-size:10px;
+  letter-spacing:2px; color:var(--gold);
+  margin-bottom:10px;
+}
+.panel-text {
+  font-size:14px; color:var(--muted);
+  line-height:1.85; margin-bottom:16px;
+}
+.panel-text strong { color:var(--white); font-weight:600; }
+.panel-text em { color:var(--gold-light); font-style:normal; }
+.panel-stat-row {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:1px; background:rgba(255,255,255,0.06);
+  margin:16px 0;
+}
+.panel-stat {
+  background:var(--ink3); padding:16px 18px;
+}
+.panel-stat-n {
+  font-family:'Playfair Display',serif;
+  font-size:26px; font-weight:900;
+  color:var(--gold); line-height:1; margin-bottom:4px;
+}
+.panel-stat-l { font-size:11px; color:var(--muted2); letter-spacing:1px; }
+.panel-tag-row { display:flex; flex-wrap:wrap; gap:6px; margin:12px 0; }
+.panel-tag {
+  font-family:'DM Mono',monospace; font-size:10px;
+  padding:4px 10px; border:1px solid rgba(201,168,76,0.25);
+  color:var(--gold); letter-spacing:1px;
+}
+.panel-tag.b { border-color:rgba(77,184,138,0.3); color:#4db88a; }
+.panel-link-btn {
+  display:inline-flex; align-items:center; gap:8px;
+  background:var(--gold); color:var(--ink);
+  font-family:'DM Mono',monospace; font-size:11px;
+  letter-spacing:2px; padding:10px 22px;
+  text-decoration:none; margin-top:8px;
+  transition:all .2s; border:none; cursor:pointer;
+  font-weight:600;
+}
+.panel-link-btn:hover { background:var(--gold-light); }
+
+/* ══ PROJECTS ══ */
+.projects-section {
+  background:var(--ink);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  padding:72px 60px;
+  position:relative; z-index:1;
+}
+.proj-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:1px; background:rgba(255,255,255,0.06);
+}
+.proj-card {
+  background:var(--ink2); padding:28px 26px;
+  position:relative; overflow:hidden;
+  transition:background .25s;
+  text-decoration:none; display:block;
+}
+.proj-card:hover { background:var(--ink3); }
+.proj-card::before {
+  content:''; position:absolute;
+  top:0; right:0; width:3px; height:100%;
+  background:var(--gold); opacity:0;
+  transition:opacity .25s;
+}
+.proj-card:hover::before { opacity:1; }
+.proj-num {
+  font-family:'Playfair Display',serif;
+  font-size:44px; font-weight:900;
+  color:rgba(201,168,76,0.07); line-height:1;
+  margin-bottom:12px;
+}
+.proj-title { font-size:16px; font-weight:700; color:var(--white); margin-bottom:6px; }
+.proj-tech {
+  font-family:'DM Mono',monospace; font-size:10px;
+  color:var(--gold); letter-spacing:1px; margin-bottom:10px;
+}
+.proj-desc { font-size:12px; color:var(--muted); line-height:1.7; margin-bottom:16px; }
+.proj-tags { display:flex; flex-wrap:wrap; gap:5px; }
+.proj-tag {
+  font-family:'DM Mono',monospace; font-size:9px;
+  padding:3px 8px; border:1px solid rgba(255,255,255,0.1);
+  color:var(--muted2); letter-spacing:1px;
+}
+.proj-footer {
+  margin-top:16px; padding-top:12px;
+  border-top:1px solid rgba(255,255,255,0.06);
+  font-family:'DM Mono',monospace; font-size:10px;
+  color:var(--muted2); display:flex; align-items:center; gap:6px;
+}
+.proj-footer span { color:var(--gold); }
+.proj-main-link {
+  background:var(--ink3); border:1px solid var(--gold-line);
+  padding:20px 26px; margin-bottom:1px;
+  display:flex; align-items:center; justify-content:space-between;
+  text-decoration:none; transition:background .2s;
+}
+.proj-main-link:hover { background:var(--off); }
+.proj-main-title {
+  font-size:16px; font-weight:700; color:var(--white);
+  margin-bottom:4px;
+}
+.proj-main-url {
+  font-family:'DM Mono',monospace; font-size:11px;
+  color:var(--gold); letter-spacing:1px;
+}
+.proj-main-arrow {
+  font-family:'Playfair Display',serif;
+  font-size:28px; color:var(--gold); opacity:.5;
+}
+
+/* ══ MAP SECTION ══ */
+.map-section {
+  background:var(--ink2);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  padding:72px 60px;
+  position:relative; z-index:1;
+}
+.map-wrap {
+  display:grid; grid-template-columns:1fr 360px;
+  gap:1px; background:rgba(255,255,255,0.06);
+}
+.map-container {
+  background:var(--ink3);
+  position:relative; min-height:360px;
+  overflow:hidden;
+}
+.map-svg-wrap {
+  width:100%; height:100%; min-height:360px;
+  position:relative;
+}
+/* SVG map styles */
+.map-country { fill:#1a1a1a; stroke:#2a2a2a; stroke-width:0.5; }
+.map-iraq { fill:#1e1a0e; stroke:var(--gold); stroke-width:1.5; }
+.map-pulse-ring {
+  fill:none; stroke:var(--gold);
+  animation:pulse-ring 2.5s ease-out infinite;
+  transform-origin:center;
+}
+@keyframes pulse-ring {
+  0%  { r:8; opacity:.9; stroke-width:2; }
+  100%{ r:28; opacity:0; stroke-width:.5; }
+}
+.map-dot { fill:var(--gold); }
+.map-label {
+  font-family:'DM Mono',monospace; font-size:11px;
+  fill:var(--gold); letter-spacing:1px;
+}
+.map-sublabel {
+  font-family:'Cairo',sans-serif; font-size:10px;
+  fill:#888;
+}
+.map-overlay-label {
+  position:absolute; top:16px; right:16px;
+  font-family:'DM Mono',monospace; font-size:9px;
+  letter-spacing:2px; color:var(--muted2);
+}
+.map-info {
+  background:var(--ink3); padding:32px 28px;
+  display:flex; flex-direction:column; gap:0;
+}
+.map-info-title {
+  font-family:'DM Mono',monospace; font-size:10px;
+  letter-spacing:3px; color:var(--gold);
+  margin-bottom:20px;
+}
+.map-info-row {
+  padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  display:flex; flex-direction:column; gap:4px;
+}
+.map-info-row:last-of-type { border:none; }
+.map-info-lbl { font-family:'DM Mono',monospace; font-size:9px; color:var(--muted2); letter-spacing:2px; }
+.map-info-val { font-size:13px; color:var(--white); font-weight:600; }
+.map-gmaps-btn {
+  margin-top:auto; padding-top:20px;
+  display:flex; flex-direction:column; gap:8px;
+}
+.map-btn {
+  display:flex; align-items:center; gap:10px;
+  background:rgba(201,168,76,0.08); border:1px solid var(--gold-line);
+  padding:10px 16px; text-decoration:none;
+  font-family:'DM Mono',monospace; font-size:10px;
+  color:var(--gold); letter-spacing:1px;
+  transition:all .2s;
+}
+.map-btn:hover { background:rgba(201,168,76,0.18); }
+
+/* ══ SOCIAL INLINE (horizontal strip) ══ */
+.social-strip {
+  background:var(--ink);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  padding:40px 60px;
+  position:relative; z-index:1;
+}
+.social-strip-head {
+  display:flex; align-items:center; gap:16px; margin-bottom:24px;
+}
+.social-strip-title {
+  font-family:'DM Mono',monospace; font-size:10px;
+  letter-spacing:3px; color:var(--gold);
+}
+.social-strip-line { flex:1; height:1px; background:rgba(255,255,255,0.06); }
+.social-strip-grid {
+  display:flex; gap:8px; flex-wrap:wrap;
+}
+.soc-pill {
+  display:flex; align-items:center; gap:10px;
+  background:var(--ink2); border:1px solid rgba(255,255,255,0.07);
+  padding:10px 16px; text-decoration:none;
+  transition:all .25s;
+}
+.soc-pill:hover { border-color:var(--gold-line); background:var(--ink3); }
+.soc-pill-icon { font-size:16px; flex-shrink:0; }
+.soc-pill-name {
+  font-family:'DM Mono',monospace; font-size:10px;
+  color:var(--muted2); letter-spacing:1px;
+  white-space:nowrap;
+}
+.soc-pill:hover .soc-pill-name { color:var(--gold); }
+
+@media(max-width:900px){
+  .proj-grid { grid-template-columns:1fr; }
+  .map-wrap { grid-template-columns:1fr; }
+  .projects-section,.map-section,.social-strip { padding:48px 24px; }
+}
+
+/* ══ SEO NOTICE ══ */
+.seo-bar {
+  background:rgba(201,168,76,0.05);
+  border-top:1px solid var(--gold-line);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  padding:18px 60px;
+  display:flex; gap:14px; flex-wrap:wrap; align-items:center;
+  position:relative; z-index:1;
+}
+.seo-label { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:3px; color:var(--gold); white-space:nowrap; }
+.seo-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.seo-tag { font-family:'DM Mono',monospace; font-size:10px; padding:3px 9px; border:1px solid rgba(201,168,76,0.2); color:var(--muted2); letter-spacing:1px; }
+
+/* ══ SOCIAL SECTION ══ */
+.social-section {
+  background:var(--ink2);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  padding:56px 60px;
+  position:relative; z-index:1;
+}
+.social-top { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:32px; flex-wrap:wrap; gap:16px; }
+.social-heading { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; color:var(--white); }
+.social-sub { font-family:'DM Mono',monospace; font-size:10px; color:var(--muted2); letter-spacing:2px; margin-top:4px; }
+.seo-tip { max-width:380px; font-size:12px; color:var(--muted2); line-height:1.75; text-align:left; border-right:2px solid var(--gold-line); padding-right:16px; }
+.social-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,0.05); }
+.sc {
+  background:var(--ink3); padding:22px 20px;
+  text-decoration:none; display:flex; flex-direction:column; gap:8px;
+  transition:background .25s; position:relative; overflow:hidden;
+}
+.sc:hover { background:#222; }
+.sc::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--c,var(--gold)); transform:scaleX(0); transform-origin:right; transition:transform .3s; }
+.sc:hover::after { transform:scaleX(1); }
+.sc-icon { width:34px; height:34px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:17px; background:var(--cb,rgba(201,168,76,0.1)); flex-shrink:0; }
+.sc-name { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:2px; color:var(--c,var(--gold)); }
+.sc-handle { font-size:12px; color:var(--muted); line-height:1.4; word-break:break-all; }
+.sc-arr { font-family:'DM Mono',monospace; font-size:10px; color:var(--muted2); margin-top:auto; }
+
+/* ══ FOOTER ══ */
+footer {
+  background:var(--ink);
+  border-top:1px solid var(--gold-line);
+  padding:48px 60px;
+  display:grid; grid-template-columns:1fr 1fr; gap:40px;
+  position:relative; z-index:1;
+}
+.footer-eng { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:var(--gold); margin-bottom:8px; }
+.footer-role { font-size:13px; color:var(--muted); letter-spacing:1px; }
+.footer-right { text-align:left; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap:6px; }
+.footer-version { font-family:'DM Mono',monospace; font-size:10px; color:var(--muted2); letter-spacing:2px; }
+.footer-line { width:40px; height:1px; background:var(--gold-line); }
+
+@media(max-width:900px){
+  .social-grid { grid-template-columns:1fr 1fr; }
+  .seo-bar,.social-section { padding:20px 24px; }
+}
+
+/* ══ IDENTITY GRID ══ */
+.id-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(255,255,255,0.06); }
+.id-cell {
+  background:var(--ink2);
+  padding:32px;
+  position:relative; overflow:hidden;
+}
+.section:nth-child(even) .id-cell { background:var(--ink3); }
+.id-ghost {
+  position:absolute; bottom:-20px; right:-10px;
+  font-family:'Playfair Display',serif;
+  font-size:100px; font-weight:900;
+  color:rgba(255,255,255,0.02);
+  pointer-events:none;
+}
+.id-lbl {
+  font-family:'DM Mono',monospace;
+  font-size:9px; letter-spacing:3px;
+  color:var(--muted2); margin-bottom:10px; display:block;
+}
+.id-val { font-size:18px; font-weight:700; color:var(--white); line-height:1.5; }
+.id-val.gold { color:var(--gold); }
+.id-val.sml { font-size:14px; font-weight:400; color:var(--muted); }
+
+/* ══ ANIMATIONS ══ */
+@keyframes rise {
+  from { opacity:0; transform:translateY(32px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.reveal { opacity:0; }
+.reveal.visible { animation:rise .7s cubic-bezier(.2,.8,.3,1) forwards; }
+
+@media(max-width:900px){
+  .hero { grid-template-columns:1fr; }
+  .hero-right { display:none; }
+  .desc-trio,.comp-grid,.timeline,.cal-grid { grid-template-columns:1fr; }
+  .platform-grid { grid-template-columns:1fr 1fr; }
+  .id-grid { grid-template-columns:1fr; }
+  .section { padding:60px 24px; }
+  .hero-left { padding:60px 24px; }
+  footer { grid-template-columns:1fr; padding:40px 24px; }
+  .hero-title { font-size:36px; }
+  .hero-stats { grid-template-columns:1fr 1fr; gap:16px; }
+  .hstat+.hstat { border:none; }
+  .step { grid-template-columns:70px 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-social">
+    <a href="https://www.linkedin.com/in/alaa-mohammed-saleh-72a52833a" target="_blank" class="nav-soc" title="LinkedIn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@alaa-bc8dc" target="_blank" class="nav-soc" title="YouTube">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/alaamohammmadsalih/" target="_blank" class="nav-soc" title="Instagram">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/alaa199516" target="_blank" class="nav-soc" title="Facebook">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a href="https://t.me/a19952alaa" target="_blank" class="nav-soc" title="Telegram">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@alaa.mohammed026" target="_blank" class="nav-soc" title="TikTok">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+    </a>
+    <a href="https://x.com/ArtherAlfred" target="_blank" class="nav-soc" title="X · Twitter">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="https://www.snapchat.com/add/alaamohammedsil" target="_blank" class="nav-soc" title="Snapchat">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.166.012C10.08.012 5.37.577 3.336 5.19c-.538 1.222-.41 3.316-.34 4.881l-.02.006c-.23.05-.48.077-.748.077-.42 0-.838-.1-1.085-.273a.395.395 0 00-.228-.071.383.383 0 00-.37.275c-.037.128-.06.338.173.535.063.054 1.551 1.12 3.746 1.448.464.75 1.485 2.584 3.508 2.584.077 0 .157-.005.238-.013.455-.051.854-.203 1.247-.35.485-.182.93-.35 1.543-.35.597 0 1.03.163 1.5.34.407.152.826.31 1.305.357.077.008.155.012.232.012 2.017 0 3.039-1.826 3.501-2.578 2.213-.326 3.707-1.394 3.77-1.448.234-.197.21-.407.173-.535a.383.383 0 00-.37-.275.395.395 0 00-.228.07c-.247.174-.665.274-1.085.274-.268 0-.517-.028-.748-.077l-.02-.006c.07-1.565.198-3.659-.34-4.881C18.664.577 13.954.012 12.166.012z"/></svg>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a class="nav-a on" href="#hero">الرئيسية</a>
+    <a class="nav-a" href="https://alaamohammed864.github.io/ENG_ALAA_MOHAMMED/" target="_blank">مشاريعي ↗</a>
+    <a class="nav-a" href="#desc">الشرح</a>
+    <a class="nav-a" href="#competitors">المنافسون</a>
+    <a class="nav-a" href="#steps">التنفيذ</a>
+    <a class="nav-a" href="#platforms">المنصات</a>
+    <a class="nav-a" href="#timeline">الجدول</a>
+    <a class="nav-a" href="#calendar">المحتوى</a>
+    <a class="nav-a" href="#budget">الميزانية</a>
+  </div>
+  <div class="nav-brand">ENG_ALAA MOHAMMED</div>
+</nav>
+
+<!-- ══ INFO PANELS (overlay drawers) ══ -->
+<div class="panel-overlay" id="panelOverlay" onclick="closePanel(event)">
+  <div class="panel-drawer" id="panelDrawer">
+    <button class="panel-close" onclick="closePanel()">✕ إغلاق</button>
+
+    <!-- ABOUT PANEL -->
+    <div id="panel-about" class="panel-content" style="display:none">
+      <div class="panel-eyebrow">ENGINEER · PROFILE</div>
+      <div class="panel-title">المهندس<br>علاء محمد صالح</div>
+      <div class="panel-divider"></div>
+
+      <div class="panel-section-title">ABOUT · نبذة</div>
+      <div class="panel-text">
+        مهندس ميكانيكي من <strong>البصرة، العراق</strong>، متخصص في التحليل الإنشائي والمتعدد الفيزياء، النمذجة ثلاثية الأبعاد، وتطوير أدوات هندسية برمجية متقدمة. يجمع بين العمل الميداني الاستشاري وبناء منصات تعليمية رقمية تحت مظلة <em>AXIOM Engineering Suite</em>.
+      </div>
+
+      <div class="panel-stat-row">
+        <div class="panel-stat">
+          <div class="panel-stat-n">SolidWorks</div>
+          <div class="panel-stat-l">2022 · تصميم ميكانيكي</div>
+        </div>
+        <div class="panel-stat">
+          <div class="panel-stat-n">FEA</div>
+          <div class="panel-stat-l">تحليل إجهادات متعدد الفيزياء</div>
+        </div>
+        <div class="panel-stat">
+          <div class="panel-stat-n">v6.0</div>
+          <div class="panel-stat-l">AXIOM PRO · آخر إصدار</div>
+        </div>
+        <div class="panel-stat">
+          <div class="panel-stat-n">Iraq</div>
+          <div class="panel-stat-l">البصرة · منطقة الخليج</div>
+        </div>
+      </div>
+
+      <div class="panel-divider"></div>
+      <div class="panel-section-title">EXPERTISE · التخصصات</div>
+      <div class="panel-tag-row">
+        <span class="panel-tag">تحليل FEA</span>
+        <span class="panel-tag">SolidWorks 2022</span>
+        <span class="panel-tag">CAD / 3D Modeling</span>
+        <span class="panel-tag b">تطوير ويب</span>
+        <span class="panel-tag b">Three.js</span>
+        <span class="panel-tag b">HTML / CSS / JS</span>
+        <span class="panel-tag">Von Mises Analysis</span>
+        <span class="panel-tag">Multiphysics</span>
+        <span class="panel-tag b">Python</span>
+        <span class="panel-tag">هندسة وصفية</span>
+        <span class="panel-tag b">FastAPI</span>
+        <span class="panel-tag">تصميم صناعي</span>
+      </div>
+
+      <div class="panel-divider"></div>
+      <div class="panel-section-title">PROJECTS · أبرز المشاريع</div>
+      <div class="panel-text">
+        بنى وطوّر <strong>AXIOM PRO v6.0</strong> — تطبيق تحليل هندسي بنية OOP متكاملة، يشمل FEA heatmap، تصدير PDF، قاعدة بيانات مواد، وundo/redo. طوّر أيضاً لوحة الدفاع السيبراني <strong>AEGIS DEFENSE</strong>، ومخطط P&ID تفاعلي لنظام بويلر بخار، وتطبيق رسم بالتتبع الحركي <strong>AIR DRAW PRO</strong>.
+      </div>
+
+      <div class="panel-divider"></div>
+      <a href="https://alaamohammed864.github.io/ENG_ALAA_MOHAMMED/" target="_blank" class="panel-link-btn">
+        عرض البورتفوليو الكامل ↗
+      </a>
+    </div>
+
+    <!-- AXIOM PANEL -->
+    <div id="panel-axiom" class="panel-content" style="display:none">
+      <div class="panel-eyebrow">PLATFORM · المنصة</div>
+      <div class="panel-title">AXIOM<br>Engineering Suite</div>
+      <div class="panel-divider"></div>
+
+      <div class="panel-section-title">WHAT IS IT · ما هو؟</div>
+      <div class="panel-text">
+        <strong>AXIOM Engineering Suite</strong> هو إطار عمل هندسي رقمي متكامل صممه المهندس علاء محمد — يضم مجموعة من التطبيقات والأدوات التقنية المبنية بـ HTML/CSS/JS/Three.js، موجّهة للتحليل الهندسي، التصميم، التعليم، والاستشارات.
+      </div>
+
+      <div class="panel-divider"></div>
+      <div class="panel-section-title">MODULES · الوحدات</div>
+
+      <div class="panel-stat-row">
+        <div class="panel-stat">
+          <div class="panel-stat-n" style="font-size:18px;">AXIOM PRO</div>
+          <div class="panel-stat-l">تحليل هندسي FEA · v6.0</div>
+        </div>
+        <div class="panel-stat">
+          <div class="panel-stat-n" style="font-size:18px;">AEGIS</div>
+          <div class="panel-stat-l">لوحة الدفاع السيبراني</div>
+        </div>
+        <div class="panel-stat">
+          <div class="panel-stat-n" style="font-size:18px;">P&ID</div>
+          <div class="panel-stat-l">مخطط بويلر بخار تفاعلي</div>
+        </div>
+        <div class="panel-stat">
+          <div class="panel-stat-n" style="font-size:18px;">AIR DRAW</div>
+          <div class="panel-stat-l">رسم بالتتبع الحركي</div>
+        </div>
+      </div>
+
+      <div class="panel-divider"></div>
+      <div class="panel-section-title">AXIOM PRO v6.0 · التفاصيل</div>
+      <div class="panel-text">
+        أحدث إصدار يعمل بهيكل <em>OOP متكامل</em>، يشمل: عرض FEA heatmap لنماذج bracket/beam/pressure vessel/shaft، وضعيات Von Mises / deformation / FOS، قاعدة بيانات مواد كاملة، undo/redo، وتصدير PDF احترافي.
+      </div>
+
+      <div class="panel-tag-row">
+        <span class="panel-tag">Three.js</span>
+        <span class="panel-tag">WebGL</span>
+        <span class="panel-tag b">OOP Architecture</span>
+        <span class="panel-tag">PDF Export</span>
+        <span class="panel-tag b">FEA Heatmap</span>
+        <span class="panel-tag">Multi-provider AI</span>
+        <span class="panel-tag b">Material Database</span>
+        <span class="panel-tag">Undo / Redo</span>
+      </div>
+
+      <div class="panel-divider"></div>
+      <div class="panel-section-title">VISION · الرؤية</div>
+      <div class="panel-text">
+        AXIOM ليست مجرد أدوات — هي <strong>هوية هندسية</strong>. كل تطبيق يحمل نفس الـ aesthetic: واجهات HUD داكنة، خطوط Orbitron، ألوان Cyan/Orange، وأنيميشن احترافي. الهدف: بناء منظومة أدوات هندسية عربية متكاملة تُنافس المنتجات الغربية.
+      </div>
+
+      <div class="panel-divider"></div>
+      <a href="https://alaamohammed864.github.io/ENG_ALAA_MOHAMMED/" target="_blank" class="panel-link-btn">
+        استكشاف المشاريع ↗
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="hero">
+  <div class="hero-left">
+    <div>
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text">AXIOM · Business Plan · 2025</span>
+      </div>
+
+      <h1 class="hero-title">
+        أكاديمية<br>
+        الحلول<br>
+        <span>الهندسية</span><br>
+        والتقنية
+      </h1>
+    </div>
+
+    <div>
+      <p class="hero-subtitle">
+        منصة متكاملة تجمع الاستشارات الهندسية الميدانية، والتعليم التطبيقي، وصناعة المحتوى الرقمي — موجّهة للمهندسين والطلاب والشركات في العراق والخليج.
+      </p>
+
+      <div class="hero-badges">
+        <button class="badge solid" onclick="openPanel('about')" style="cursor:pointer;border:none;">ENG_ALAA MOHAMMED ↗</button>
+        <span class="badge">البصرة · العراق</span>
+        <button class="badge" onclick="openPanel('axiom')" style="cursor:pointer;">AXIOM SUITE ↗</button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-n">3</div>
+          <div class="hstat-l">محاور أساسية</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">7</div>
+          <div class="hstat-l">خطوات تنفيذ</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">90</div>
+          <div class="hstat-l">يوم للانطلاق</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n" style="font-size:32px;">$650</div>
+          <div class="hstat-l">ميزانية السنة الأولى</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="pillars-title">المحاور الثلاثة الأساسية</div>
+    <div class="pillar">
+      <div class="pillar-num">I</div>
+      <div>
+        <div class="pillar-name">الاستشارات الهندسية</div>
+        <div class="pillar-desc">تحليل إجهادات، تصميم ميكانيكي، إدارة مشاريع — مع بناء حالات دراسية حقيقية من السوق المحلي.</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">II</div>
+      <div>
+        <div class="pillar-name">التعليم والدورات التطبيقية</div>
+        <div class="pillar-desc">تحويل الخبرات الاستشارية إلى كورسات مدفوعة عبر منصة LMS خاصة — دخل متكرر وقابل للتوسع.</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">III</div>
+      <div>
+        <div class="pillar-name">المحتوى الرقمي التسويقي</div>
+        <div class="pillar-desc">محتوى LinkedIn وYouTube يجذب العملاء والطلاب معاً دون إنفاق إعلاني مرتفع.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section class="projects-section" id="projects">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:16px;" class="reveal">
+    <div>
+      <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold);margin-bottom:8px;">PORTFOLIO · مشاريعي</div>
+      <div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--white);border-bottom:2px solid var(--gold);display:inline-block;padding-bottom:4px;">أبرز المشاريع الهندسية</div>
+    </div>
+    <a href="https://alaamohammed864.github.io/ENG_ALAA_MOHAMMED/" target="_blank"
+       style="display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--ink);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;padding:12px 24px;text-decoration:none;font-weight:600;transition:all .2s;"
+       onmouseover="this.style.background='#e8cc7a'" onmouseout="this.style.background='var(--gold)'">
+      عرض البورتفوليو الكامل ↗
+    </a>
+  </div>
+
+  <!-- Main portfolio link -->
+  <a href="https://alaamohammed864.github.io/ENG_ALAA_MOHAMMED/" target="_blank" class="proj-main-link reveal">
+    <div>
+      <div class="proj-main-title">ENG_ALAA MOHAMMED — Portfolio</div>
+      <div class="proj-main-url">alaamohammed864.github.io/ENG_ALAA_MOHAMMED</div>
+    </div>
+    <div class="proj-main-arrow">↗</div>
+  </a>
+
+  <div class="proj-grid reveal">
+    <div class="proj-card">
+      <div class="proj-num">01</div>
+      <div class="proj-title">AXIOM PRO v6.0</div>
+      <div class="proj-tech">FEA ANALYSIS · ENGINEERING TOOL</div>
+      <div class="proj-desc">تطبيق تحليل هندسي متكامل بنية OOP، يشمل FEA heatmap لنماذج bracket/beam/pressure vessel/shaft مع وضعيات Von Mises / Deformation / FOS، قاعدة بيانات مواد، undo/redo، وتصدير PDF.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Three.js</span>
+        <span class="proj-tag">WebGL</span>
+        <span class="proj-tag">OOP</span>
+        <span class="proj-tag">PDF Export</span>
+        <span class="proj-tag">AI Multi-provider</span>
+      </div>
+      <div class="proj-footer"><span>↗</span> عرض المشروع على البورتفوليو</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">02</div>
+      <div class="proj-title">AEGIS DEFENSE Dashboard</div>
+      <div class="proj-tech">CYBERSECURITY · SOC · BLUE TEAM</div>
+      <div class="proj-desc">لوحة دفاع سيبراني تفاعلية تُصوّر مكوّنات Blue Team/SOC: YARA rules، JA3 fingerprinting، C2 beaconing detection، MITRE ATT&CK mapping — مع نوافذ تفاعلية كاملة.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">MITRE ATT&CK</span>
+        <span class="proj-tag">YARA Rules</span>
+        <span class="proj-tag">Interactive Modals</span>
+        <span class="proj-tag">Dark HUD</span>
+      </div>
+      <div class="proj-footer"><span>↗</span> عرض المشروع على البورتفوليو</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">03</div>
+      <div class="proj-title">P&ID Boiler System</div>
+      <div class="proj-tech">PROCESS ENGINEERING · INTERACTIVE</div>
+      <div class="proj-desc">مخطط P&ID تفاعلي لنظام بويلر بخار يعمل بالفحم — خطوط تدفق متحركة، رموز الأدوات الهندسية، وصف عربي RTL لكل مكوّن، ضمن حزمة AXIOM Engineering Suite.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Animated Flow</span>
+        <span class="proj-tag">Arabic RTL</span>
+        <span class="proj-tag">SVG Instruments</span>
+        <span class="proj-tag">AXIOM Suite</span>
+      </div>
+      <div class="proj-footer"><span>↗</span> عرض المشروع على البورتفوليو</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">04</div>
+      <div class="proj-title">AIR DRAW PRO</div>
+      <div class="proj-tech">HAND TRACKING · MEDIAPIPE</div>
+      <div class="proj-desc">تطبيق رسم بالتتبع الحركي لليد باستخدام MediaPipe Hands — مع Python server محلي للتحايل على قيود أمان كاميرا المتصفح. يعمل بالكامل محلياً دون hosting خارجي.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">MediaPipe</span>
+        <span class="proj-tag">Python Server</span>
+        <span class="proj-tag">Camera API</span>
+        <span class="proj-tag">Offline</span>
+      </div>
+      <div class="proj-footer"><span>↗</span> عرض المشروع على البورتفوليو</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">05</div>
+      <div class="proj-title">AXIOM Collider</div>
+      <div class="proj-tech">PHYSICS EDUCATION · PARTICLE GAME</div>
+      <div class="proj-desc">لعبة تعليمية لفيزياء الجسيمات مبنية على Standard Model Lagrangian — تُعلّم فيزياء الجسيمات الأولية بطريقة تفاعلية مرئية، ضمن سلسلة المحتوى التعليمي الهندسي.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Particle Physics</span>
+        <span class="proj-tag">Standard Model</span>
+        <span class="proj-tag">Educational Game</span>
+        <span class="proj-tag">Three.js</span>
+      </div>
+      <div class="proj-footer"><span>↗</span> عرض المشروع على البورتفوليو</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">06</div>
+      <div class="proj-title">Parametric AI CAD Service</div>
+      <div class="proj-tech">FASTAPI · THREE.JS · AI CAD</div>
+      <div class="proj-desc">خدمة توليد CAD بالذكاء الاصطناعي — FastAPI backend، Three.js frontend، دعم متعدد المزودين (Demo/Claude/OpenAI). يستهدف Blender/FreeCAD/SolidWorks/OpenSCAD workflows.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">FastAPI</span>
+        <span class="proj-tag">Three.js</span>
+        <span class="proj-tag">OpenSCAD</span>
+        <span class="proj-tag">AI Multi-provider</span>
+      </div>
+      <div class="proj-footer"><span>↗</span> عرض المشروع على البورتفوليو</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAP ══ -->
+<section class="map-section" id="map">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:16px;" class="reveal">
+    <div>
+      <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold);margin-bottom:8px;">LOCATION · الموقع</div>
+      <div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--white);border-bottom:2px solid var(--gold);display:inline-block;padding-bottom:4px;">موقع الأكاديمية</div>
+    </div>
+  </div>
+  <div class="map-wrap reveal">
+    <div class="map-container">
+      <div class="map-overlay-label">APPROXIMATE LOCATION · تقريبي</div>
+      <svg class="map-svg-wrap" viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="blur2"><feGaussianBlur stdDeviation="2"/></filter>
+        </defs>
+
+        <!-- Background -->
+        <rect width="700" height="360" fill="#111"/>
+
+        <!-- Grid lines -->
+        <g stroke="#1e1e1e" stroke-width="0.5">
+          <line x1="0" y1="60" x2="700" y2="60"/>
+          <line x1="0" y1="120" x2="700" y2="120"/>
+          <line x1="0" y1="180" x2="700" y2="180"/>
+          <line x1="0" y1="240" x2="700" y2="240"/>
+          <line x1="0" y1="300" x2="700" y2="300"/>
+          <line x1="100" y1="0" x2="100" y2="360"/>
+          <line x1="200" y1="0" x2="200" y2="360"/>
+          <line x1="300" y1="0" x2="300" y2="360"/>
+          <line x1="400" y1="0" x2="400" y2="360"/>
+          <line x1="500" y1="0" x2="500" y2="360"/>
+          <line x1="600" y1="0" x2="600" y2="360"/>
+        </g>
+
+        <!-- Turkey -->
+        <path class="map-country" d="M260 70 L340 65 L380 75 L370 95 L340 100 L300 90 L270 95 L255 82Z"/>
+        <!-- Syria -->
+        <path class="map-country" d="M300 100 L360 98 L365 120 L340 130 L305 125 L295 112Z"/>
+        <!-- Lebanon/Israel small -->
+        <path class="map-country" d="M292 120 L303 118 L304 135 L290 130Z"/>
+        <!-- Jordan -->
+        <path class="map-country" d="M303 125 L335 132 L330 158 L308 155 L300 140Z"/>
+        <!-- Egypt -->
+        <path class="map-country" d="M240 140 L295 132 L300 155 L290 190 L240 195 L220 170 L225 145Z"/>
+        <!-- Saudi Arabia -->
+        <path class="map-country" d="M308 155 L395 148 L420 170 L415 220 L380 245 L335 250 L300 225 L295 195 L305 170Z"/>
+        <!-- Yemen -->
+        <path class="map-country" d="M335 248 L410 225 L440 245 L420 275 L370 280 L330 265Z"/>
+        <!-- Oman -->
+        <path class="map-country" d="M420 175 L460 168 L480 195 L475 230 L455 245 L430 240 L415 220Z"/>
+        <!-- UAE/Qatar -->
+        <path class="map-country" d="M400 170 L420 168 L420 185 L405 188Z"/>
+        <!-- Kuwait -->
+        <path class="map-country" d="M372 148 L388 145 L392 158 L375 160Z"/>
+
+        <!-- IRAQ — highlighted -->
+        <path class="map-iraq" d="M330 100 L370 95 L395 105 L400 130 L395 148 L375 160 L360 165 L340 168 L325 160 L315 145 L310 125 L320 112Z"/>
+
+        <!-- Glow around Basra -->
+        <circle cx="372" cy="158" r="35" fill="url(#glow)"/>
+
+        <!-- Basra location marker -->
+        <circle class="map-pulse-ring" cx="372" cy="158" r="8"/>
+        <circle class="map-pulse-ring" cx="372" cy="158" r="8" style="animation-delay:1s"/>
+        <circle class="map-dot" cx="372" cy="158" r="5"/>
+        <circle cx="372" cy="158" r="3" fill="#0d0d0d"/>
+
+        <!-- Labels -->
+        <text class="map-label" x="352" y="130" text-anchor="middle" font-size="11">IRAQ</text>
+        <text class="map-sublabel" x="352" y="143" text-anchor="middle" font-size="9">العراق</text>
+
+        <text class="map-label" x="372" y="178" text-anchor="middle" font-size="10">البصرة</text>
+        <text style="font-family:'DM Mono',monospace;font-size:8px;fill:#555;letter-spacing:1px;" x="372" y="189" text-anchor="middle">Basra · IQ-BA</text>
+
+        <!-- Persian Gulf label -->
+        <text style="font-family:'DM Mono',monospace;font-size:9px;fill:#2a3a4a;letter-spacing:1px;" x="430" y="200" text-anchor="middle">PERSIAN GULF</text>
+
+        <!-- Compass -->
+        <g transform="translate(640,40)">
+          <circle r="18" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.2)" stroke-width="0.5"/>
+          <text style="font-family:'DM Mono',monospace;font-size:9px;fill:var(--gold);font-weight:600;" x="0" y="-6" text-anchor="middle">N</text>
+          <line x1="0" y1="-14" x2="0" y2="14" stroke="rgba(201,168,76,0.3)" stroke-width="0.5"/>
+          <line x1="-14" y1="0" x2="14" y2="0" stroke="rgba(201,168,76,0.3)" stroke-width="0.5"/>
+        </g>
+
+        <!-- Scale note -->
+        <text style="font-family:'DM Mono',monospace;font-size:8px;fill:#333;letter-spacing:1px;" x="20" y="348">APPROXIMATE · NOT TO SCALE</text>
+      </svg>
+    </div>
+    <div class="map-info">
+      <div class="map-info-title">LOCATION · تفاصيل الموقع</div>
+      <div class="map-info-row">
+        <div class="map-info-lbl">CITY · المدينة</div>
+        <div class="map-info-val">البصرة — Basra</div>
+      </div>
+      <div class="map-info-row">
+        <div class="map-info-lbl">REGION · المنطقة</div>
+        <div class="map-info-val">جنوب العراق</div>
+      </div>
+      <div class="map-info-row">
+        <div class="map-info-lbl">ISO CODE · الرمز</div>
+        <div class="map-info-val">IQ-BA · العراق</div>
+      </div>
+      <div class="map-info-row">
+        <div class="map-info-lbl">TIMEZONE · التوقيت</div>
+        <div class="map-info-val">UTC +3 · AST</div>
+      </div>
+      <div class="map-info-row">
+        <div class="map-info-lbl">COVERAGE · نطاق الخدمة</div>
+        <div class="map-info-val">العراق + الخليج العربي</div>
+      </div>
+      <div class="map-gmaps-btn">
+        <a href="https://maps.google.com/?q=Basra,Iraq" target="_blank" class="map-btn">
+          <span>📍</span> فتح في Google Maps ↗
+        </a>
+        <a href="https://www.google.com/search?q=Google+Business+Profile+Basra" target="_blank" class="map-btn">
+          <span>🏢</span> إنشاء Google Business Profile ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOCIAL STRIP ══ -->
+<div class="social-strip" id="social">
+  <div class="social-strip-head">
+    <div class="social-strip-title">SOCIAL MEDIA · تواصل معنا</div>
+    <div class="social-strip-line"></div>
+    <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted2);letter-spacing:1px;white-space:nowrap;">SEO BACKLINKS</div>
+  </div>
+  <div class="social-strip-grid">
+    <a href="https://www.linkedin.com/in/alaa-mohammed-saleh-72a52833a" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">💼</span>
+      <span class="soc-pill-name">LinkedIn</span>
+    </a>
+    <a href="https://www.youtube.com/@alaa-bc8dc" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">▶️</span>
+      <span class="soc-pill-name">YouTube</span>
+    </a>
+    <a href="https://www.instagram.com/alaamohammmadsalih/" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">📸</span>
+      <span class="soc-pill-name">Instagram</span>
+    </a>
+    <a href="https://www.facebook.com/alaa199516" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">📘</span>
+      <span class="soc-pill-name">Facebook</span>
+    </a>
+    <a href="https://t.me/a19952alaa" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">✈️</span>
+      <span class="soc-pill-name">Telegram</span>
+    </a>
+    <a href="https://www.tiktok.com/@alaa.mohammed026" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">🎵</span>
+      <span class="soc-pill-name">TikTok</span>
+    </a>
+    <a href="https://x.com/ArtherAlfred" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">✖️</span>
+      <span class="soc-pill-name">X · Twitter</span>
+    </a>
+    <a href="https://www.snapchat.com/add/alaamohammedsil" target="_blank" class="soc-pill">
+      <span class="soc-pill-icon">👻</span>
+      <span class="soc-pill-name">Snapchat</span>
+    </a>
+  </div>
+</div>
+
+<!-- ══ IDENTITY ══ -->
+<section class="section" id="identity">
+  <div class="section-header reveal">
+    <div class="section-index">01</div>
+    <div class="section-title-block">
+      <div class="section-label">IDENTITY · الهوية</div>
+      <div class="section-title">الهوية التجارية والاستراتيجية</div>
+    </div>
+  </div>
+  <div class="id-grid reveal">
+    <div class="id-cell">
+      <div class="id-ghost">A</div>
+      <span class="id-lbl">BUSINESS NAME · الاسم التجاري</span>
+      <div class="id-val gold">أكاديمية الحلول الهندسية والتقنية</div>
+    </div>
+    <div class="id-cell">
+      <div class="id-ghost">B</div>
+      <span class="id-lbl">OPERATING MODEL · النموذج التشغيلي</span>
+      <div class="id-val">استشارات + تعليم + محتوى رقمي</div>
+    </div>
+    <div class="id-cell">
+      <div class="id-ghost">C</div>
+      <span class="id-lbl">STRATEGIC GOAL · الهدف الاستراتيجي</span>
+      <div class="id-val sml">تقديم حلول هندسية عملية، وتحويل الخبرات إلى دورات تدريبية مع تسويق احترافي متكامل</div>
+    </div>
+    <div class="id-cell">
+      <div class="id-ghost">D</div>
+      <span class="id-lbl">TARGET AUDIENCE · الجمهور المستهدف</span>
+      <div class="id-val sml">المهندسون، الطلاب، الشركات الصناعية في العراق والخليج العربي</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DESC ══ -->
+<section class="section" id="desc">
+  <div class="section-header reveal">
+    <div class="section-index">02</div>
+    <div class="section-title-block">
+      <div class="section-label">VISION · الرؤية</div>
+      <div class="section-title">شرح المحاور الثلاثة الأساسية</div>
+    </div>
+  </div>
+  <div class="desc-trio reveal">
+    <div class="desc-card">
+      <div class="desc-card-num">I</div>
+      <span class="desc-card-icon">🏛️</span>
+      <div class="desc-card-title">ما هي الأكاديمية؟</div>
+      <div class="desc-card-text">
+        مؤسسة هندسية رقمية تحمل اسم <strong>ENG_ALAA MOHAMMED</strong> وعلامة تجارية متماسكة. لستَ مجرد مدرّب أو مستشار — أنت تبني <em>نظاماً</em> يُعلِّم ويُحلِّل ويُسوِّق في آنٍ واحد. هذا التكامل هو ما يُميّزك عن آلاف المنصات العربية العشوائية.
+      </div>
+    </div>
+    <div class="desc-card">
+      <div class="desc-card-num">II</div>
+      <span class="desc-card-icon">⚡</span>
+      <div class="desc-card-title">لماذا الثلاثي؟</div>
+      <div class="desc-card-text">
+        <strong>الاستشارات</strong> تجلب الدخل الفوري وتبني السمعة. <strong>التعليم</strong> يُحوّل الخبرات إلى دخل متكرر بلا حدود جغرافية. <strong>المحتوى</strong> هو محرّك التسويق المجاني. كل مشروع يصبح درساً — كل درس يصبح مقطعاً — كل مقطع يجذب عميلاً جديداً.
+      </div>
+    </div>
+    <div class="desc-card">
+      <div class="desc-card-num">III</div>
+      <span class="desc-card-icon">🎯</span>
+      <div class="desc-card-title">تحويل الخبرة إلى دورات</div>
+      <div class="desc-card-text">
+        كورساتك مبنية على مشاكل <em>حقيقية حللتها فعلاً</em> في الواقع — ليس محتوى نظري منقول. عندما تشرح كيف حللت مشكلة إجهاد في محور دوّار بالـ FEA في البصرة، هذا محتوى لا يملكه أحد غيرك. <strong>هذا التفرّد هو ميزتك التنافسية الحقيقية.</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COMPETITORS ══ -->
+<section class="section" id="competitors">
+  <div class="section-header reveal">
+    <div class="section-index">03</div>
+    <div class="section-title-block">
+      <div class="section-label">BENCHMARKS · المرجعيات</div>
+      <div class="section-title">المنصات المعروفة — ادرسها وتميّز</div>
+    </div>
+  </div>
+  <p class="comp-note reveal">← اضغط على أي بطاقة للانتقال للموقع الرسمي</p>
+  <div class="comp-grid reveal">
+    <a href="https://www.cadcamteacher.com/ar" target="_blank" class="comp-card">
+      <span class="comp-abbr">CAD</span>
+      <div class="comp-name">CAD CAM Teacher</div>
+      <span class="comp-tag">أكاديمية هندسة · عربية</span>
+      <div class="comp-txt">متخصصة بـ SolidWorks وFusion 360 وCNC. تدريب عملي مع شهادات معتمدة. قوية في السوق السعودي.</div>
+      <span class="comp-url">cadcamteacher.com ↗</span>
+    </a>
+    <a href="https://heshamtarek.com" target="_blank" class="comp-card type-b">
+      <span class="comp-abbr">HT</span>
+      <div class="comp-name">منصة هشام طارق</div>
+      <span class="comp-tag">أكاديمية مدنية · عربية</span>
+      <div class="comp-txt">الأقوى في ETABS وRevit وBIM. محتوى عملي وملفات مشاريع حقيقية. المرجع الأول للمهندسين المدنيين العرب.</div>
+      <span class="comp-url">heshamtarek.com ↗</span>
+    </a>
+    <a href="https://www.leoron.com/ar" target="_blank" class="comp-card type-c">
+      <span class="comp-abbr">LEO</span>
+      <div class="comp-name">معهد LEORON</div>
+      <span class="comp-tag">تدريب معتمد · خليجي دولي</span>
+      <div class="comp-txt">دورات هندسية معتمدة دولياً. حضور قوي في الخليج. مرتفع السعر لكن ذو قيمة عالية لدى الشركات الكبرى.</div>
+      <span class="comp-url">leoron.com ↗</span>
+    </a>
+    <a href="https://euromatech-me.com" target="_blank" class="comp-card">
+      <span class="comp-abbr">EUR</span>
+      <div class="comp-name">يوروماتيك للتدريب</div>
+      <span class="comp-tag">استشارات وتدريب · الخليج</span>
+      <div class="comp-txt">يغطي صيانة المعدات الثقيلة وهندسة البترول والغاز. نموذج B2B ممتاز للاستلهام منه في التعامل مع شركات النفط العراقية.</div>
+      <span class="comp-url">euromatech-me.com ↗</span>
+    </a>
+    <a href="https://www.pioneersacademy.com/ar" target="_blank" class="comp-card type-b">
+      <span class="comp-abbr">ROW</span>
+      <div class="comp-name">أكاديمية الرواد</div>
+      <span class="comp-tag">تدريب متخصص · خليجي</span>
+      <div class="comp-txt">تغطي Revit, Primavera, MATLAB, ETABS. حضور قوي في الخليج ومعتمدة من مؤسسات سعودية للتعليم الإلكتروني.</div>
+      <span class="comp-url">pioneersacademy.com ↗</span>
+    </a>
+    <a href="https://engineersgate.net" target="_blank" class="comp-card type-c">
+      <span class="comp-abbr">EG</span>
+      <div class="comp-name">بوابة المهندسين</div>
+      <span class="comp-tag">أكاديمية هندسية · مصر</span>
+      <div class="comp-txt">كورسات ميكانيكا وكهرباء ومعمارية. قاعدة جماهيرية مصرية قوية. نموذج مرجعي لأكاديمية هندسية عربية ناجحة.</div>
+      <span class="comp-url">engineersgate.net ↗</span>
+    </a>
+    <a href="https://thinkific.com" target="_blank" class="comp-card">
+      <span class="comp-abbr">THK</span>
+      <div class="comp-name">Thinkific</div>
+      <span class="comp-tag">منصة بناء أكاديمية خاصة</span>
+      <div class="comp-txt">الأفضل لبناء أكاديمية مستقلة بعلامتك التجارية. تتحكم بالتسعير والمحتوى والطالب. بديل ممتاز عن Udemy.</div>
+      <span class="comp-url">thinkific.com ↗</span>
+    </a>
+    <a href="https://www.udemy.com/teaching" target="_blank" class="comp-card type-b">
+      <span class="comp-abbr">UDM</span>
+      <div class="comp-name">Udemy</div>
+      <span class="comp-tag">سوق كورسات عالمي</span>
+      <div class="comp-txt">200 مليون طالب. استخدمه كقناة إضافية فقط — المنافسة شديدة وعائدك العضوي 37%. ابنِ منصتك الخاصة أولاً.</div>
+      <span class="comp-url">udemy.com ↗</span>
+    </a>
+    <a href="https://www.m3aarf.com" target="_blank" class="comp-card type-c">
+      <span class="comp-abbr">معا</span>
+      <div class="comp-name">منصة معارف</div>
+      <span class="comp-tag">تعليم عربي مجاني · شامل</span>
+      <div class="comp-txt">دورات هندسية مجانية. فرصتك: استهداف زبائنها بمحتوى تطبيقي متقدم مدفوع لا يجدونه هنا.</div>
+      <span class="comp-url">m3aarf.com ↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ══ STEPS ══ -->
+<section class="section" id="steps">
+  <div class="section-header reveal">
+    <div class="section-index">04</div>
+    <div class="section-title-block">
+      <div class="section-label">EXECUTION · التنفيذ</div>
+      <div class="section-title">خطة التنفيذ التشغيلية · 7 خطوات</div>
+    </div>
+  </div>
+  <div class="steps-list reveal">
+    <div class="step">
+      <div class="step-idx"><div class="step-n">01</div><div class="step-of">/ 07</div></div>
+      <div class="step-content">
+        <div class="step-title">تأسيس البنية التحتية الرقمية</div>
+        <div class="step-desc">إنشاء موقع بنظام LMS لبيع الكورسات وعرض خدمات الاستشارات. ربط أدوات التصميم الهندسي والبرمجة والإدارة في منظومة واحدة متكاملة تضمن توثيق كل مشروع وتحويله لمحتوى تعليمي لاحقاً.</div>
+        <div class="step-links">
+          <a href="https://wordpress.org" target="_blank" class="step-lnk">WordPress ↗</a>
+          <a href="https://www.learndash.com" target="_blank" class="step-lnk">LearnDash ↗</a>
+          <a href="https://www.solidworks.com" target="_blank" class="step-lnk">SolidWorks ↗</a>
+          <a href="https://www.notion.so" target="_blank" class="step-lnk b">Notion ↗</a>
+          <a href="https://trello.com" target="_blank" class="step-lnk b">Trello ↗</a>
+          <a href="https://thinkific.com" target="_blank" class="step-lnk c">Thinkific ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-idx"><div class="step-n">02</div><div class="step-of">/ 07</div></div>
+      <div class="step-content">
+        <div class="step-title">إطلاق وحدة الاستشارات الهندسية</div>
+        <div class="step-desc">البدء بتقديم التصميم الميكانيكي، تحليل الإجهادات (FEA)، وإدارة المشاريع. استهداف شركات النفط والغاز في البصرة والمصانع الإقليمية. كل مشروع تُنجزه = Case Study حقيقية تُغذّي مكتبة الكورسات.</div>
+        <div class="step-links">
+          <a href="https://www.upwork.com" target="_blank" class="step-lnk b">Upwork ↗</a>
+          <a href="https://www.linkedin.com" target="_blank" class="step-lnk b">LinkedIn B2B ↗</a>
+          <a href="https://www.simulia.com" target="_blank" class="step-lnk">Abaqus FEA ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-idx"><div class="step-n">03</div><div class="step-of">/ 07</div></div>
+      <div class="step-content">
+        <div class="step-title">صناعة المحتوى التسويقي التعليمي</div>
+        <div class="step-desc">محتوى تعليمي مجاني يُبرز خبرتك ويجذب العملاء والطلاب معاً بدلاً من إنفاق ضخم على الإعلانات. مثال: فيديو يشرح حل مشكلة إجهاد في عمود دوران مضخة نفط بـ SolidWorks FEA.</div>
+        <div class="step-links">
+          <a href="https://www.youtube.com" target="_blank" class="step-lnk">YouTube Studio ↗</a>
+          <a href="https://www.linkedin.com" target="_blank" class="step-lnk">LinkedIn ↗</a>
+          <a href="https://www.canva.com" target="_blank" class="step-lnk c">Canva ↗</a>
+          <a href="https://www.capcut.com" target="_blank" class="step-lnk c">CapCut ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-idx"><div class="step-n">04</div><div class="step-of">/ 07</div></div>
+      <div class="step-content">
+        <div class="step-title">تطوير الدورات التدريبية التطبيقية</div>
+        <div class="step-desc">تحويل المشاكل الاستشارية إلى كورسات تطبيقية: برمجة متحكمات، تصميم ميكانيكي بـ SolidWorks، تحليل FEA، إدارة مواقع إنشائية. فيديوهات عالية الجودة + PDF مساعد + مشاريع تطبيقية + شهادة.</div>
+        <div class="step-links">
+          <a href="https://obsproject.com" target="_blank" class="step-lnk">OBS Studio مجاني ↗</a>
+          <a href="https://www.loom.com" target="_blank" class="step-lnk c">Loom ↗</a>
+          <a href="https://www.teachable.com" target="_blank" class="step-lnk c">Teachable ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-idx"><div class="step-n">05</div><div class="step-of">/ 07</div></div>
+      <div class="step-content">
+        <div class="step-title">إدارة التواصل الاجتماعي وخطة المحتوى</div>
+        <div class="step-desc">جدول أسبوعي منتظم: الأحد نصيحة هندسية تقنية — الثلاثاء عرض مشروع ناجح — الخميس خصم على دورة. بناء مجتمع متفاعل من المهندسين والطلاب.</div>
+        <div class="step-links">
+          <a href="https://buffer.com" target="_blank" class="step-lnk">Buffer جدولة ↗</a>
+          <a href="https://discord.com" target="_blank" class="step-lnk c">Discord مجتمع ↗</a>
+          <a href="https://wa.me" target="_blank" class="step-lnk c">WhatsApp ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-idx"><div class="step-n">06</div><div class="step-of">/ 07</div></div>
+      <div class="step-content">
+        <div class="step-title">خدمة العملاء والدعم الفني المتكامل</div>
+        <div class="step-desc">دعم مباشر للمتدربين عبر WhatsApp أو Discord. تقارير دورية لعملاء الاستشارات لضمان الشفافية والثقة. قاعدة معرفية (FAQs) على الموقع تقلّل الأسئلة المتكررة.</div>
+        <div class="step-links">
+          <a href="https://wa.me" target="_blank" class="step-lnk b">WhatsApp Support ↗</a>
+          <a href="https://discord.com" target="_blank" class="step-lnk b">Discord Community ↗</a>
+          <a href="https://tawk.to" target="_blank" class="step-lnk c">Tawk.to مجاني ↗</a>
+          <a href="https://www.hubspot.com/products/crm" target="_blank" class="step-lnk">HubSpot CRM ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-idx"><div class="step-n">07</div><div class="step-of">/ 07</div></div>
+      <div class="step-content">
+        <div class="step-title">التوسع والنمو المستدام</div>
+        <div class="step-desc">بعد نجاح الكورسات الأولى وبناء السمعة: توظيف مهندسين مساعدين وصنّاع محتوى. التفرّغ لتطوير المنصة وابتكار دورات متقدمة وتوسيع الشراكات مع الشركات الصناعية في الخليج.</div>
+        <div class="step-links">
+          <a href="https://www.fiverr.com" target="_blank" class="step-lnk c">Fiverr توظيف ↗</a>
+          <a href="https://www.stripe.com" target="_blank" class="step-lnk">Stripe مدفوعات ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PLATFORMS ══ -->
+<section class="section" id="platforms">
+  <div class="section-header reveal">
+    <div class="section-index">05</div>
+    <div class="section-title-block">
+      <div class="section-label">INFRASTRUCTURE · البنية التحتية</div>
+      <div class="section-title">منصات LMS الموصى بها</div>
+    </div>
+  </div>
+  <div class="platform-grid reveal">
+    <a href="https://www.learndash.com" target="_blank" class="pcard star">
+      <span class="pcard-rec">★ الأفضل للتحكم الكامل</span>
+      <div class="pcard-name">LearnDash + WordPress</div>
+      <span class="pcard-type">SELF-HOSTED LMS</span>
+      <div class="pcard-desc">أكثر مرونة وتحكماً. تملك كل شيء — البيانات والطلاب والتصميم. يتطلب إعداداً تقنياً بسيطاً.</div>
+      <div class="pcard-price">~$200 / سنة</div>
+    </a>
+    <a href="https://www.thinkific.com" target="_blank" class="pcard star">
+      <span class="pcard-rec">★ الأسرع للبدء</span>
+      <div class="pcard-name">Thinkific</div>
+      <span class="pcard-type">CLOUD LMS</span>
+      <div class="pcard-desc">بناء أكاديمية بعلامتك التجارية الكاملة. لا مشاركة في الإيرادات. خطة مجانية متاحة.</div>
+      <div class="pcard-price">مجاني ← $49 / شهر</div>
+    </a>
+    <a href="https://www.teachable.com" target="_blank" class="pcard">
+      <div class="pcard-name">Teachable</div>
+      <span class="pcard-type">CLOUD LMS · شائع</span>
+      <div class="pcard-desc">سهل الاستخدام مع أدوات تسويق مدمجة. شائع بين معلمي الكورسات المستقلين.</div>
+      <div class="pcard-price">مجاني ← $39 / شهر</div>
+    </a>
+    <a href="https://www.udemy.com/teaching" target="_blank" class="pcard">
+      <div class="pcard-name">Udemy Instructor</div>
+      <span class="pcard-type">MARKETPLACE عالمي</span>
+      <div class="pcard-desc">200 مليون طالب. المنافسة شرسة وعائدك العضوي 37% فقط. استخدمه كقناة ثانوية.</div>
+      <div class="pcard-price">مجاني للنشر</div>
+    </a>
+  </div>
+</section>
+
+<!-- ══ TIMELINE ══ -->
+<section class="section" id="timeline">
+  <div class="section-header reveal">
+    <div class="section-index">06</div>
+    <div class="section-title-block">
+      <div class="section-label">ROADMAP · خارطة الطريق</div>
+      <div class="section-title">الجدول الزمني · أول 90 يوماً</div>
+    </div>
+  </div>
+  <div class="timeline reveal">
+    <div class="phase">
+      <div class="phase-ghost">I</div>
+      <div class="phase-num">PHASE · 01</div>
+      <div class="phase-name">التأسيس</div>
+      <div class="phase-period">الشهر الأول</div>
+      <div class="phase-task">بناء الموقع + إعداد LearnDash أو Thinkific</div>
+      <div class="phase-task">تجهيز البورتفوليو الهندسي الاحترافي</div>
+      <div class="phase-task">هيكلة أول دورة تدريبية وتحديد محتواها</div>
+      <div class="phase-task">إنشاء ملفات الهوية البصرية للعلامة التجارية</div>
+      <div class="phase-task">تهيئة صفحات LinkedIn وYouTube</div>
+    </div>
+    <div class="phase">
+      <div class="phase-ghost">II</div>
+      <div class="phase-num">PHASE · 02</div>
+      <div class="phase-name">الانطلاق</div>
+      <div class="phase-period">الشهر الثاني</div>
+      <div class="phase-task">بدء نشر المحتوى التعليمي الأسبوعي</div>
+      <div class="phase-task">فتح التسجيل المبكر للكورس — Pre-launch</div>
+      <div class="phase-task">إطلاق حملات إعلانية مستهدفة ومحدودة</div>
+      <div class="phase-task">التواصل المباشر مع شركات محلية للاستشارات</div>
+      <div class="phase-task">بناء قائمة بريد إلكتروني للمهتمين</div>
+    </div>
+    <div class="phase">
+      <div class="phase-ghost">III</div>
+      <div class="phase-num">PHASE · 03</div>
+      <div class="phase-name">التشغيل</div>
+      <div class="phase-period">الشهر الثالث</div>
+      <div class="phase-task">إطلاق الكورس الأول رسمياً مع حملة إطلاق</div>
+      <div class="phase-task">استقبال أول طلب استشاري مدفوع</div>
+      <div class="phase-task">قياس KPIs وتعديل الاستراتيجية</div>
+      <div class="phase-task">جمع مراجعات المتدربين الأوائل</div>
+      <div class="phase-task">البدء بتخطيط الكورس الثاني</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CALENDAR ══ -->
+<section class="section" id="calendar">
+  <div class="section-header reveal">
+    <div class="section-index">07</div>
+    <div class="section-title-block">
+      <div class="section-label">CONTENT · المحتوى</div>
+      <div class="section-title">خطة المحتوى الأسبوعية</div>
+    </div>
+  </div>
+  <div class="cal-grid reveal">
+    <div class="cal-card">
+      <div class="cal-ghost">أحد</div>
+      <div class="cal-day-label">Sunday · الأحد</div>
+      <div class="cal-title">نصيحة هندسية تقنية</div>
+      <div class="cal-sub">محتوى تعليمي يحل مشكلة شائعة في الهندسة مع شرح مرئي. ينشر على YouTube وLinkedIn. هدفه: بناء الثقة والسلطة التقنية.</div>
+      <ul class="cal-examples">
+        <li class="cal-ex">3 أخطاء شائعة في تحليل FEA لعمود الدوران</li>
+        <li class="cal-ex">كيف تحسب معامل الأمان للمواد تحت الإجهاد المتكرر</li>
+        <li class="cal-ex">لماذا تفشل معظم محاكاة تدفق الموائع؟</li>
+      </ul>
+    </div>
+    <div class="cal-card">
+      <div class="cal-ghost">ثلاثاء</div>
+      <div class="cal-day-label">Tuesday · الثلاثاء</div>
+      <div class="cal-title">عرض مشروع ناجح</div>
+      <div class="cal-sub">Case Study حقيقية من الواقع تُظهر كفاءتك الهندسية وتبني الثقة لدى العملاء المحتملين. LinkedIn أساساً.</div>
+      <ul class="cal-examples">
+        <li class="cal-ex">تحليل إجهاد لمحور ضخة صناعية في البصرة</li>
+        <li class="cal-ex">تصميم تعديل ميكانيكي لمعدة إنتاج متوقفة</li>
+        <li class="cal-ex">حساب أحمال إنشائية لمستودع صناعي</li>
+      </ul>
+    </div>
+    <div class="cal-card">
+      <div class="cal-ghost">خميس</div>
+      <div class="cal-day-label">Thursday · الخميس</div>
+      <div class="cal-title">خصم أو مهارة جديدة</div>
+      <div class="cal-sub">عرض ترويجي لدورة أو تقديم مهارة برمجية / تصميمية جديدة. يُستخدم لتوليد مبيعات الكورسات وجذب متدربين جدد.</div>
+      <ul class="cal-examples">
+        <li class="cal-ex">خصم 40% لمدة 48 ساعة على كورس SolidWorks</li>
+        <li class="cal-ex">5 أوامر SolidWorks لا تعرفها — مجاناً</li>
+        <li class="cal-ex">ورشة اون لاين مجانية مع سؤال وجواب</li>
+      </ul>
+    </div>
+    <div class="cal-card">
+      <div class="cal-ghost">جمعة</div>
+      <div class="cal-day-label">Friday · الجمعة</div>
+      <div class="cal-title">تفاعل المجتمع</div>
+      <div class="cal-sub">سؤال هندسي تفاعلي أو استطلاع رأي. يبني تفاعل الجمهور ويرفع معدل الظهور في الخوارزميات.</div>
+      <ul class="cal-examples">
+        <li class="cal-ex">ما أصعب مشكلة هندسية واجهتها هذا الأسبوع؟</li>
+        <li class="cal-ex">SolidWorks أم Fusion 360؟ صوّت الآن</li>
+        <li class="cal-ex">استطلاع: أي كورس تريد رؤيته قادماً؟</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BUDGET ══ -->
+<section class="section" id="budget">
+  <div class="section-header reveal">
+    <div class="section-index">08</div>
+    <div class="section-title-block">
+      <div class="section-label">FINANCIALS · المالية</div>
+      <div class="section-title">الميزانية التقديرية · السنة الأولى</div>
+    </div>
+  </div>
+  <div class="budget-wrap reveal">
+    <table class="btable">
+      <thead>
+        <tr>
+          <th>البند</th>
+          <th>الدورية</th>
+          <th>الرابط</th>
+          <th>التكلفة</th>
+          <th style="width:130px;">النسبة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-name">الاستضافة والدومين</td>
+          <td>سنوياً</td>
+          <td class="td-link"><a href="https://www.bluehost.com" target="_blank">bluehost.com ↗</a></td>
+          <td class="td-price">$100 – $150</td>
+          <td><div class="bbar"><div class="bbar-fill" style="width:22%"></div></div></td>
+        </tr>
+        <tr>
+          <td class="td-name">LearnDash — إضافة LMS</td>
+          <td>سنوياً</td>
+          <td class="td-link"><a href="https://www.learndash.com" target="_blank">learndash.com ↗</a></td>
+          <td class="td-price">$199</td>
+          <td><div class="bbar"><div class="bbar-fill" style="width:30%"></div></div></td>
+        </tr>
+        <tr>
+          <td class="td-name">معدات التسجيل (ميكروفون + إضاءة)</td>
+          <td>مرة واحدة</td>
+          <td class="td-link"><a href="https://www.amazon.com" target="_blank">amazon.com ↗</a></td>
+          <td class="td-price">$100 – $200</td>
+          <td><div class="bbar"><div class="bbar-fill" style="width:30%"></div></div></td>
+        </tr>
+        <tr>
+          <td class="td-name">الإعلانات الممولة (LinkedIn + Meta)</td>
+          <td>شهرياً</td>
+          <td class="td-link"><a href="https://www.facebook.com/business/ads" target="_blank">Meta Ads ↗</a></td>
+          <td class="td-price">$50 – $100</td>
+          <td><div class="bbar"><div class="bbar-fill" style="width:16%"></div></div></td>
+        </tr>
+        <tr>
+          <td class="td-name">Canva Pro — أدوات التصميم</td>
+          <td>سنوياً</td>
+          <td class="td-link"><a href="https://www.canva.com/pro" target="_blank">canva.com ↗</a></td>
+          <td class="td-price">$60 – $120</td>
+          <td><div class="bbar"><div class="bbar-fill" style="width:18%"></div></div></td>
+        </tr>
+        <tr>
+          <td class="td-name">البرمجيات الهندسية (نسخ طلاب)</td>
+          <td>متغير</td>
+          <td class="td-link"><a href="https://www.solidworks.com/solution/students" target="_blank">SW Students ↗</a></td>
+          <td class="td-price">مجاني – $50</td>
+          <td><div class="bbar"><div class="bbar-fill" style="width:8%"></div></div></td>
+        </tr>
+        <tr class="total">
+          <td class="td-name">الإجمالي التقديري</td>
+          <td style="color:var(--muted2)">السنة الأولى</td>
+          <td></td>
+          <td class="td-price" style="color:var(--gold-light);font-size:17px;">$500 – $820</td>
+          <td><div class="bbar"><div class="bbar-fill" style="width:90%;background:var(--gold)"></div></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══ SEO KEYWORDS BAR ══ -->
+<div class="seo-bar">
+  <span class="seo-label">SEO · KEYWORDS</span>
+  <div class="seo-tags">
+    <span class="seo-tag">هندسة ميكانيكية</span>
+    <span class="seo-tag">استشارات هندسية العراق</span>
+    <span class="seo-tag">دورات برمجية</span>
+    <span class="seo-tag">علاء محمد</span>
+    <span class="seo-tag">تصميم صناعي</span>
+    <span class="seo-tag">البصرة</span>
+    <span class="seo-tag">FEA Analysis</span>
+    <span class="seo-tag">SolidWorks</span>
+    <span class="seo-tag">AXIOM</span>
+    <span class="seo-tag">أكاديمية هندسية</span>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div>
+    <div class="footer-eng">ENG_ALAA MOHAMMED</div>
+    <div class="footer-role">مؤسس أكاديمية الحلول الهندسية والتقنية · البصرة، العراق</div>
+    <div style="margin-top:12px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted2);letter-spacing:1px;">
+      geo: IQ-BA · lang: ar · schema: EducationalOrganization
+    </div>
+  </div>
+  <div class="footer-right">
+    <div class="footer-line"></div>
+    <div class="footer-version">AXIOM Engineering Suite</div>
+    <div class="footer-version">Business Plan · v4.0 · 2025</div>
+    <div class="footer-version" style="margin-top:6px;color:var(--gold);opacity:.7;">SEO + Projects + Map · Optimized</div>
+  </div>
+</footer>
+
+<script>
+// ══ PANEL SYSTEM ══
+function openPanel(type) {
+  document.querySelectorAll('.panel-content').forEach(p=>p.style.display='none');
+  const target = document.getElementById('panel-'+type);
+  if(target) target.style.display='block';
+  document.getElementById('panelOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePanel(e) {
+  if(e && e.target !== document.getElementById('panelOverlay') && !e.target.classList.contains('panel-close')) return;
+  document.getElementById('panelOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closePanel({target:document.getElementById('panelOverlay')}); });
+
+// ══ NAV ACTIVE ══
+const navAs = document.querySelectorAll('.nav-a');
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navAs.forEach(a=>a.classList.remove('on'));
+      const t = document.querySelector(`.nav-a[href="#${e.target.id}"]`);
+      if(t) t.classList.add('on');
+    }
+  });
+},{threshold:0.25});
+document.querySelectorAll('section[id], div[id]').forEach(s=>io.observe(s));
+
+// ══ SCROLL REVEAL ══
+const rv = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>rv.observe(el));
+
+// ══ PROJ CARD LINKS ══
+document.querySelectorAll('.proj-card').forEach(c=>{
+  c.style.cursor='pointer';
+  c.addEventListener('click',()=>window.open('https://alaamohammed864.github.io/ENG_ALAA_MOHAMMED/','_blank'));
+});
+</script>
+</body>
+</html>
